@@ -1,21 +1,21 @@
-var matr = [
-[ 1, 5, 7, "V"],
-[ 3, 8, "O", 9],
-[ 1, "V", 4, 4],
-[ "A", 8, 9, 9],
-]
+// var matr = [
+// [ 1, 5, 7, "V"],
+// [ 3, 8, "O", 9],
+// [ 1, "V", 4, 4],
+// [ "A", 8, 9, 9],
+// ]
 
-function diagonal(mass){
-	var arr = [];
-  var pos = 1;
-	for(var i = 0; i<mass.length;i++){
-  	arr.push(mass[i][mass.length-pos]);
-    pos++;
-  }
-  alert(arr);
-}
+// function diagonal(mass){
+// 	var arr = [];
+//   var pos = 1;
+// 	for(var i = 0; i<mass.length;i++){
+//   	arr.push(mass[i][mass.length-pos]);
+//     pos++;
+//   }
+//   alert(arr);
+// }
 
-diagonal(matr);
+// diagonal(matr);
 
 
 
@@ -53,3 +53,29 @@ diagonal(matr);
 //     }
 // }
 // alert(arrNum);
+
+
+
+
+// function dick() {
+// 	var count = 0;
+// 	for (var i = 0; i < arguments.length; i++) {
+// 		count++;
+// 	}
+// 	alert(count);
+// }
+// dick(5,8,13);
+
+var mass = ["masha", "petya", "mike", "jhon"]
+var newMass = mass.map(function(name) {
+	var str = "";
+	for (var i = 0; i < name.length; i++) {
+		if (i%2!==0) {
+			str += name[i].toUpperCase();
+		} else {
+			str += name[i];
+		}
+	}
+	return str;
+});
+alert(newMass);
